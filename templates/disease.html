@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Analysis</title>
+    <link rel="stylesheet" href="/static/disease.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="/static/disease.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <h1>Skin Disease Analysis</h1>
+        
+        <!-- Form to upload image -->
+        <form id="upload-form" method="POST" enctype="multipart/form-data">
+            <div class="formflex">
+                <div class="form-group">
+                    <label for="image">Upload Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                <!-- Image Preview Section (Initially hidden) -->
+                <div id="image-preview-container" style=" margin: 20px;">
+                    <img id="image-preview" style="max-width: 150px; float: right; margin-left: 20px; border-radius: 10px;" />
+                </div>
+            </div>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <!-- Display prediction result (initially hidden) -->
+        <div class="result" style="display:none;">
+            <h2>Prediction:</h2>
+            <p id="prediction"></p> <!-- Prediction text will be inserted here -->
+        </div>
+
+        <!-- Button to download PDF (initially hidden) -->
+        <div class="buttons" style="display: none;">
+            <button id="download-pdf">Download PDF</button>
+        </div>
+        
+    </div>
+</body>
+</html>

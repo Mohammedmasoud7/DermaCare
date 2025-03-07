@@ -1,0 +1,314 @@
+/* General Styles */
+.custom-shape-divider-top-1732541692 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-right: 300px;
+  }
+  
+  .custom-shape-divider-top-1732541692 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 75px;
+    transform: rotateY(0deg);
+    
+  }
+  
+  .custom-shape-divider-top-1732541692 .shape-fill {
+    fill: #2a7f4f;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-left:-70px;
+
+  }
+
+  .logo-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(0, 41, 12);
+    font-weight: bold;
+  }
+  
+.logo-container img{
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+  h2, h3 {
+    color: #2a7f4f;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 140px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color .5s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #000000;
+  }
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+/* Input Section */
+
+#input-section {
+    margin-top: 120px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#parameter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#soil-parameters, #climate-parameters {
+    width: 48%;
+}
+
+#soil-parameters h2, #climate-parameters h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#soil-parameters input, #climate-parameters input {
+    width: calc(33% - 1rem);
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#predict-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s;
+}
+
+#predict-btn:hover {
+    background-color: #45a049;
+}
+
+/* Output Section */
+#output-section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#output-section h2 {
+    margin-bottom: 1rem;
+    color: #4caf50;
+}
+
+/* Crop Results Grid */
+#crop-results {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.crop {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.crop:hover{
+    transform: scale(1.005);
+    
+    background: linear-gradient(30deg,#f5fdf3,#f7f9f7);    
+}
+
+/* Chart Section */
+#chart-section {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 px;
+
+
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#crop-chart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Last Inputs Display */
+#last-predicted-values {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0px;
+
+
+
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#input-history-display {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.input-history-item {
+    background-color: #f0f0f0;
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 0.9rem;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* Visibility Classes */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #parameter-container {
+        flex-direction: column;
+    }
+
+    #soil-parameters, #climate-parameters {
+        width: 100%;
+    }
+
+    #input-section {
+        padding: 1rem;
+    }
+
+    #crop-results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+#lower{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#crop{
+    color: #333333;
+}
+
+
+.custom-shape-divider-bottom-1733406637 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1733406637 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 131px;
+}
+
+.custom-shape-divider-bottom-1733406637 .shape-fill {
+    fill: #20633D;
+}

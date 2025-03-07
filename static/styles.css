@@ -1,0 +1,449 @@
+html{
+  scroll-behavior:smooth ;
+}
+
+.custom-shape-divider-top-1733426897 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1733426897 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 113px;
+}
+
+.custom-shape-divider-top-1733426897 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+
+
+/* General Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #4a4a4a;
+  }
+
+
+  .logo-container{
+    display: flex;
+    align-items: center;
+    margin-left: -70px;
+
+  }
+
+  .logo-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(0, 41, 12);
+    font-weight: bold;
+  }
+  
+.logo-container img{
+    max-width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+  h2, h3 {
+    color: hwb(30 7% 69%);
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.4);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spacing between the buttons */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px; /* Padding inside each button */
+    background-color: rgba(255, 255, 255, 0.); /* White background for each link */
+    border-radius: 10px; /* Rounded corners for each button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+}
+
+.nav-links li a:hover {
+    background-color: #ffffff; /* Light grey background on hover */
+    color: #000000; /* Change text color on hover */
+}
+
+  
+  /* Hero Section */
+  .hero {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url('/static/images/view-woman-working-agricultural-sector-celebrate-labour-day-women.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    color: white; /* Retain text color */
+}
+
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    max-width: 900px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+ /* Buttons */
+.btn {
+  background-color: #ffdd00;
+  color: rgb(30, 30, 30);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s ease; /* Combine transitions */
+}
+
+.btn:hover {
+  background-color: #f5c900; /* Slightly darker yellow for hover effect */
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn1 {
+  background-color: rgb(113, 54, 15);
+  color: rgb(245, 245, 245);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s ease; /* Combine transitions */
+}
+
+.btn1:hover {
+  background-color: rgb(163, 86, 27); /* Darker green for hover */
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+  
+  /* Features Section */
+  .features {
+    
+    padding: 0 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+    align-items: center;
+  }
+
+  .features h2{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    align-items: center;
+
+    
+
+  }
+  
+  .feature-card {
+    background: linear-gradient(45deg,#ffffff,#ffffff);
+    border-radius: 12px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    transition:box-shadow 1s ease, transform 0.3s ease;
+
+    
+    cursor: pointer;
+    padding-bottom: 50px;
+    max-width: 500px;
+    
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 11px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(30deg,#f1ffee,#f7f9f7);
+  }
+  
+  .feature-card img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* About Us & Our Goal Section */
+  .about-us, .our-goal {
+    padding: 50px 10%;
+    background-color: #f7f7f7;
+  }
+  
+  .about-us p, .our-goal p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* How It Works Section */
+  .how-it-works {
+    padding: 50px 10%;
+    background-color: #7c470b;
+    color: white;
+    text-align: center;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .step {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .step:hover {
+    transform: scale(1.05);
+  }
+  
+  .step img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: #4a4a4a;
+  }
+  
+  /* Contact Us Section */
+  .contact-us {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .social-link img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-link img:hover {
+    transform: scale(1.2);
+  }
+  
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .feature-cards {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  
+    .steps {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+  
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  background: linear-gradient(0deg, #543c1c, #4b3812);
+  color: rgb(255, 253, 253);
+  position: relative; /* Needed for absolute positioning of SVG */
+  min-height: 500px; /* Adjust based on your content */
+  overflow: hidden; /* Ensures no extra overlap */
+  background-image: url('/static/images/view-woman-working-agricultural-sector-celebrate-labour-day-women.jpg'); 
+  background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    color: rgb(1, 14, 17); /* Retain text color */
+}
+
+.hero-image img {
+  margin-bottom: 100px;
+  max-width: 100%;
+  height: auto;
+  z-index: 2; /* Ensures the image appears above the curve */
+  position: relative;
+}
+
+.hero-text {
+  z-index: 2; /* Ensures text appears above SVG */
+}
+
+.custom-shape-divider-bottom-1733425674 {
+  margin-bottom: -1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 1; /* Places the curve below the content */
+}
+
+.custom-shape-divider-bottom-1733425674 svg {
+  
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 113px;
+}
+
+.custom-shape-divider-bottom-1733425674 .shape-fill {
+  fill: #f7f7f7; /* Match with the next section or your design */
+}
+
+
+
+.custom-shape-divider-bottom-17334256741 {
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  z-index: 10; /* Places the curve below the content */
+}
+
+.custom-shape-divider-bottom-17334256741 svg {
+  position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 113px;
+}
+
+.custom-shape-divider-bottom-17334256741 .shape-fill {
+  fill: #f7f7f7; /* Match with the next section or your design */
+}
+
+
+
+
+.blockk{
+  background-color: #f7f7f7;
+  height: 25px;
+}
+
+#disease-detection{
+  margin-right: 100px;
+}
+
+
+#chatbot{
+  margin-left: 100px;
+}

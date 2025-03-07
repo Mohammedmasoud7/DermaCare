@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/download copy.png" type="image/X-icon">
+    <title>DermaCare - Beautify</title>
+    <link rel="stylesheet" href="../static/chatbot.css">
+</head>
+<body>
+  <div class="custom-shape-divider-top-1732541692">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+  
+    <header>
+        <header class="header">
+            <nav class="nav">
+              <div class="logo-container">
+                <img src="/static/images/download copy.png" alt="AgroVerse Logo" class="logo">
+                <div class="logo-name">DermaCare - Beautify</div>
+              </div>
+              <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+              </ul>
+            </nav>
+    </header>
+    
+    <div id="chat-container">
+      <button id="mute-btn" class="mute-button">
+        <img id="mute-icon" src="/static/images/unmute.png" alt="Unmute" width="30" height="30">
+    </button>
+    
+      
+      <h2>Skincare AI ChatBot</h2>
+      <div id="chat-box"></div>
+      <div id="user-input">
+          <input type="text" id="chat-input" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+          <button onclick="sendText()" id="send-button">
+              <img src="/static/images/send.png" alt="Send" class="icon">
+          </button>
+          <button onclick="recordAudio()" id="voice-btn">
+              <img src="/static/images/speak.png" alt="Speak" class="icon">
+          </button>
+      </div>
+  </div>
+    <script src="../static/chatbot.js"></script>
+</body>
+</html>

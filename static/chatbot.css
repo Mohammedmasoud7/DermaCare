@@ -1,0 +1,291 @@
+
+  
+/* General Styles */
+.custom-shape-divider-top-1732541692 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-size: cover;
+    background-position: center;
+    height: 150px; /* Adjust height as needed */
+}
+  
+  .custom-shape-divider-top-1732541692 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 75px;
+    transform: rotateY(0deg);
+    
+  }
+  
+  .custom-shape-divider-top-1732541692 .shape-fill {
+    fill: #2a7f4f;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #4a4a4a;
+    }
+  
+  
+    .logo-container{
+      display: flex;
+      align-items: center;
+      margin-left: -70px;
+  
+    }
+  
+    .logo-name{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      color: rgb(0, 41, 12);
+      font-weight: bold;
+    }
+    
+  .logo-container img{
+      max-width: 40px;
+      height: auto;
+      margin-right: 10px;
+  }
+
+  
+  
+  h2, h3 {
+    color: #2a7f4f;
+  }
+  
+  /* Navigation */
+ .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px; /* Slight space from the left */
+}
+
+
+.logo-container img {
+    max-width: 50px; /* Slightly larger logo */
+    height: auto;
+    margin-left: -89px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0; /* Remove excessive margins */
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #000;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch;   /* Align items to the full width */
+    justify-content: flex-start; /* Align content to the top */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style for the mute button */
+/* Style for the mute button */
+.mute-button {
+    background-color: #2a7f4f;
+    border-radius: 30px;
+    border: none; /* Remove border */
+    background: none; /* Transparent background */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Optional padding */
+    outline: none; /* Remove focus outline */
+    display: flex; /* Flex for alignment */
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+
+    position: absolute; /* Enable positioning */
+    top: 100px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    z-index: 9999; /* Ensure it stays above other elements */
+}
+
+/* Style for the mute/unmute icon */
+.mute-button img {
+    width: 20px; /* Set width */
+    height: 20px; /* Set height */
+    transition: transform 0.2s ease-in-out; /* Smooth animation on hover */
+}
+
+/* Hover effect for the button */
+.mute-button:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+#chat-container {
+    width: calc(100% - 40px); /* Add space for padding */
+    max-width: 1000px; /* Limit maximum width */
+    min-height: 86vh; /* Expand vertically */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 20px auto; /* Add margin from the header */
+}
+
+
+h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+/* Chat Box Styling */
+/* Chat Bubble Styling */
+.chat-bubble {
+    padding: 10px 15px;
+    margin: 10px 0; /* Added consistent margin for spacing */
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: inline-block;
+    line-height: 1.4;
+    font-size: 14px;
+    clear: both;
+}
+
+/* User Bubble (Right-aligned) */
+.user-bubble {
+    background-color: #3d96f6;
+    color: #fff;
+    align-self: flex-end;
+    border-top-right-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-left: auto; /* Pushes bubble to the right */
+    text-align: left; /* Text alignment */
+}
+
+/* Bot Bubble (Left-aligned) */
+.bot-bubble {
+    background-color: #3e9751;
+    color: #ffffff;
+    align-self: flex-start;
+    border-top-left-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-right: auto; /* Pushes bubble to the left */
+    text-align: left; /* Text alignment */
+}
+
+/* Chat Box Styling */
+#chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Added gap for consistent spacing */
+    background-color: #fafafa; /* Slight background contrast */
+}
+
+/* User Input Styling */
+#user-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+button {
+    padding:13px 9px 9px 9px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+button#mic-button {
+    background-color: #f4fdf1;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:not(#mic-button) {
+    background-color: #f4fdf1;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Scrollbar for chat-box */
+#chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}

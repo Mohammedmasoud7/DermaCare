@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation System</title>
+    <link rel="stylesheet" href="/static/crop.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<div class="custom-shape-divider-top-1732541692">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+<body>
+    <header>
+        <header class="header">
+            <nav class="nav">
+              <div class="logo-container">
+                <img src="/static/images/download copy.png" alt="AgroVerse Logo" class="logo">
+                <div class="logo-name">AgroVerse</div>
+              </div>
+              <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li><a href="http://127.0.0.1:5001/">AI Chatbot</a></li>
+                <li><a href="#disease-detection">Disease Detection</a></li>
+                <li><a href="#community">Farmers Community</a></li>
+              </ul>
+            </nav>
+    </header>
+    <main>
+        <!-- Input Section -->
+        <div id="input-section" class="visible">
+            <h2 id="crop">Crop Recommendation System</h2>
+            <div id="parameter-container">
+                <div id="soil-parameters">
+                    <h2>Soil Parameters</h2>
+                    <input type="text" id="N" placeholder="Nitrogen (N)" maxlength="5">
+                    <input type="text" id="P" placeholder="Phosphorus (P)" maxlength="5">
+                    <input type="text" id="K" placeholder="Potassium (K)" maxlength="5">
+                    <input type="text" id="ph" placeholder="pH Level" maxlength="5">
+                </div>
+
+                <div id="climate-parameters">
+                    <h2>Climate Parameters</h2>
+                    <input type="text" id="temperature" placeholder="Temperature" maxlength="5">
+                    <input type="text" id="humidity" placeholder="Humidity" maxlength="5">
+                    <input type="text" id="rainfall" placeholder="Rainfall" maxlength="5">
+                </div>
+            </div>
+            <button id="predict-btn">Predict</button>
+        </div>
+
+        <!-- Hidden Crop Results Section -->
+        <div id="output-section" class="hidden">
+            <h2>Predicted Crops</h2>
+            <div id="crop-results">
+                <!-- Crop results will appear here -->
+            </div>
+        </div>
+    <div id="lower" class="hidden">
+        <!-- Bar Chart for Recommended Crops -->
+        <div id="chart-section" class="hidden">
+            <canvas id="crop-chart"></canvas>
+        </div>
+
+        <!-- Last Inputs -->
+        <div id="last-predicted-values" class="hidden">
+            <div id="last-inputs-display">
+                <h3>Last Entered Values</h3>
+                <div id="input-history-display"></div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    </main>
+
+    <script src="/static/crop.js"></script>
+</body>
+</html>
